@@ -1,0 +1,142 @@
+:root{
+    --crema: #ece0cf;
+    --anaranjado: #F57C00;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--crema);
+}
+
+.hamburger{
+    display: none;
+}
+
+nav{
+    width: 100%;
+}
+
+nav .menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-between;
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+nav .menu li{
+    background-color: #1a0c01;
+    width: 20%;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    border: 1px solid white;
+}
+
+nav .menu li a{
+    color: white;
+}
+
+.cta-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vw;
+}
+
+#dogback{
+    width: 100%;
+    display: flex;
+    z-index: -1;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+#lovedog{
+    position: relative;
+}
+
+.footer-copy{
+    background-color: var(--anaranjado);
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--crema);
+    padding: 0 0 50px 0;
+}
+
+.footer-menu div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 28%;
+}
+
+.footer-menu div a{
+    color: #F57C00;
+}
+
+.contact-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-form input{
+    height: 25px;
+}
+
+.contact-form input:hover, .contact-form textarea:hover{
+    transition: transform 0.25s ease;
+}
+
+.contact-form input:hover, .contact-form textarea:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width:650px){
+    .logo{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }    
+
+    .hamburger{
+        display: block;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}

@@ -1,0 +1,187 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 9%;
+    padding-right: 9%;
+    background-color: #F9F9F9;
+    transition: all 0.7s ease-out
+}
+
+nav{
+    display: flex;
+    width: 38%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+#Sign{
+    padding: 2%;
+    margin: 0;
+    border-radius: 6px;
+    border: 1px solid black;
+    background-color: #F9F9F9;
+}
+
+#Sign:hover{
+    background-color: black;
+    color: white;
+}
+
+#Hamburger{
+    display: none;
+    transition: all 1s ease-out;
+}
+
+section h1, h2{
+    margin: 0;
+}
+
+.cta{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E6E6E6;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    text-align: center;
+}
+
+#StartTrial{
+    background-color: black;
+    color: white;
+    padding: 8px;
+    border: 1px solid black;
+}
+
+#StartTrial:hover{
+    background-color: #E6E6E6;
+    color: black;
+}
+
+.Suscribe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
+    padding: 45px 0 45px 0;
+    transition: all 0.7s ease-out;
+}
+
+#FormSuscribe{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    width: 28%;
+    background-color: white;
+    padding: 3% 4% 4% 4%;
+    text-align: center;
+    transition: all 0.7s ease-out;
+}
+
+#DivInput{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: start;
+}
+
+.Suscribe #FormSuscribe #Name{
+    height: 17px;
+    padding: 5px;
+}
+
+#BtSubscribe{
+    background-color: black;
+    color: white;
+    border: 0;
+    border-radius: 3px;
+    padding: 10px 0 10px 0;
+    border: 1px solid black;
+    transition: all 0.2 ease;
+}
+
+#BtSubscribe:hover{
+    background-color: white;
+    color: black;
+}
+
+footer{
+    padding: 60px 0 60px 0;
+    background-color: black;
+}
+
+footer .Container-Center{
+    display: flex;
+    justify-content: space-evenly;
+    transition: all 0.7s ease-out
+}
+
+.ContFoot{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.ContFoot a{
+    color: white;
+}
+
+.ContFoot a:hover{
+    color: gray;
+}
+
+
+.ContFoot p{
+    margin: 0;
+}
+
+.ContFoot h3{
+    margin-top: 0;
+}
+
+@media(max-width: 800px){
+    header{
+        padding: 0 2% 0 2%;
+    }
+    header #Sign, nav a{
+        display: none;
+    }
+
+    nav{
+        width: auto;
+    }
+    
+    #Hamburger{
+        display: block;
+        padding: 6px 10px 6px 10px;
+    }
+
+    .Suscribe{
+        background-color: white;
+    }
+
+    #FormSuscribe{
+        width: 88%;
+        padding: 10% 6% 10% 6%;
+    }
+    
+    .Container-Center{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+}
